@@ -1,0 +1,30 @@
+{
+  "name": "esbuild-plugin-time-spinner",
+  "version": "1.0.0",
+  "description": "Log esbuild progress spinner and build time",
+  "main": "./src/index.js",
+  "files": ["dist"],
+  "type": "module",
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "log",
+    "progress",
+    "time"
+  ],
+  "author": "Younes Barhouni",
+  "license": "ISC",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.2"
+  }
+}
