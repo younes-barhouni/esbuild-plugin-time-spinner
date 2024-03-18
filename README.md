@@ -33,8 +33,8 @@ esbuild.build({
 })
 ```
 
-![alt text](image-1.png)
-![alt text](image.png)
+![alt text](assets/image-1.png)
+![alt text](assets/image.png)
 
 ## Options
 When instantiating plugin you can pass an objects with options. 
@@ -45,7 +45,12 @@ interface IOptions {
   message?: string;
   spinner?: SpinnerName | Spinner;
 }
+```
 
+### Spinner types preview
+![alt text](assets/spinner-preview.svg)
+
+```ts
 type SpinnerName =
 		| 'dots'
 		| 'dots2'
