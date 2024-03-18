@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-time-spinner",
-  "version": "1.0.3",
+  "version": "1.0.3-test",
   "description": "Log esbuild progress spinner and build time",
   "main": "dist/index.js",
   "files": ["dist"],
