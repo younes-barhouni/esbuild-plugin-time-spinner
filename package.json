@@ -26,5 +26,8 @@
     "@types/node": "^20.11.28",
     "esbuild": "^0.20.2",
     "typescript": "^5.4.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
