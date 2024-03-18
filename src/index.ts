@@ -17,10 +17,10 @@ export default (options: IOptions = {}): Plugin => {
     setup(build: PluginBuild) {
       let time: number;
       build.onStart(() => {
+        console.log(`Build started for ${chalk.green(name)}`);
         spinner.text = `${message}\n`;
         spinner.start();
         time = new Date() as unknown as number;
-        console.log(`Build started for ${chalk.green(name)}`);
       });
       build.onEnd((result: BuildResult<BuildOptions>) => {
         result.errors.length ? spinner.fail(`Build failed. ${result.errors.length} error${result.errors.length > 1 ? 's' : ''}`) : spinner.succeed('Build successful');
